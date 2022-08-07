@@ -426,7 +426,7 @@ func (j *Job) InvokeSimple(ctx context.Context, params map[string]string) (int64
 	}
 	if isQueued {
 		Error.Printf("%s is already running", j.GetName())
-		return 0, nil
+		//return 0, nil
 	}
 
 	endpoint := "/build"
